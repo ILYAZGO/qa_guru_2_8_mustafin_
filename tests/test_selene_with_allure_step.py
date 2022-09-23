@@ -1,12 +1,18 @@
 import allure
 from selene import be, by
-from selene.support.shared import browser
 from selene.support.shared.jquery_style import s
 from .utils import *
+from allure_commons.types import Severity
 
 
+@allure.tag("web")
+@allure.severity(Severity.CRITICAL)
+@allure.label("ILYAZGO")
+@allure.description("this is descrition")
+@allure.feature("Allure with WITH")
+@allure.story("long")
+@allure.link("https://github.com")
 def test_github_with_allure_steps():
-
     with allure.step("Открываем главную страницу"):
         open_page("https://github.com")
 

@@ -2,6 +2,7 @@ from selene import be, by
 from selene.support.shared.jquery_style import s
 from .utils import *
 
+
 def test_github():
     open_page("https://github.com")
 
